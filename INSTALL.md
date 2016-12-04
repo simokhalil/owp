@@ -17,7 +17,7 @@ Table of contents:
 Most preferable way to install the panel is to use automatic installer.
 
 ```bash
-wget -O - https://raw.githubusercontent.com/sibprogrammer/owp/master/installer/ai.sh | sh
+wget -O - https://raw.githubusercontent.com/simokhalil/owp/master/installer/ai.sh | sh
 ```
 
 Instructions below should be used only if you can not use automatic installer due to some reason.
@@ -30,8 +30,8 @@ To be able to test the newest features you can install latest development versio
 This build is not suitable for production and should be used only for testing purposes.
 
 ```bash
-wget -O - https://raw.githubusercontent.com/sibprogrammer/owp/master/installer/ai.sh | \
-sh -s DOWNLOAD_URL=http://owp.softunity.com.ru/download/ovz-web-panel-latest.tgz
+wget -O - https://raw.githubusercontent.com/simokhalil/owp/master/installer/ai.sh | \
+sh -s DOWNLOAD_URL=https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ovz-web-panel/ovz-web-panel-2.4.tgz
 ```
 
 
@@ -136,7 +136,7 @@ You can checkout the source code using the following command:
 git clone https://github.com/sibprogrammer/owp.git
 ```
 
-File https://github.com/sibprogrammer/owp/blob/master/build/build.sh
+File https://github.com/simokhalil/owp/blob/master/build/build.sh
 contains information on how to prepare working copy.
 
 One of key steps is to create/upgrade database after code update:
@@ -153,5 +153,5 @@ rake db:migrate RAILS_ENV="production"
 To uninstall the product need to run the command:
 
 ```bash
-wget -O - https://raw.githubusercontent.com/sibprogrammer/owp/master/installer/ai.sh | sh -s UNINSTALL=1
+wget -O - https://raw.githubusercontent.com/simokhalil/owp/master/installer/ai.sh | sh -s UNINSTALL=1
 ```
